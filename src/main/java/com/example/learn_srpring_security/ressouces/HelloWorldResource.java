@@ -1,17 +1,15 @@
-package com.example.learn_srpring_security;
+package com.example.learn_srpring_security.ressouces;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
-@RequestMapping("/hello-world")
 public class HelloWorldResource {
 
-    @GetMapping
+    @GetMapping("/hello-world")
     public String helloWorld() {
         return "Hello World v1";
     }
-
 
 }
